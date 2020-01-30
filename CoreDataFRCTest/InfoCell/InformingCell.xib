@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="InfoCell" rowHeight="58" id="RNr-ze-lc0" customClass="InformingCell" customModule="JuniorExercize" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RNr-ze-lc0" id="i3g-AE-3HB">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qPU-Fu-UWm" userLabel="infoTextField">
+                        <rect key="frame" x="20" y="10" width="230" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="230" id="0nf-UG-w8G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqB-as-dEY" userLabel="underLine">
+                        <rect key="frame" x="20" y="47" width="230" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="M5b-uH-OgD"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-wG-coj" userLabel="infoLabel">
+                        <rect key="frame" x="270" y="17.5" width="46.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qPU-Fu-UWm" firstAttribute="leading" secondItem="i3g-AE-3HB" secondAttribute="leading" constant="20" id="FPr-j6-fhb"/>
+                    <constraint firstItem="fqB-as-dEY" firstAttribute="leading" secondItem="qPU-Fu-UWm" secondAttribute="leading" id="J1W-Lj-bha"/>
+                    <constraint firstItem="uTc-wG-coj" firstAttribute="centerY" secondItem="i3g-AE-3HB" secondAttribute="centerY" id="JqM-Nu-cmB"/>
+                    <constraint firstItem="fqB-as-dEY" firstAttribute="width" secondItem="qPU-Fu-UWm" secondAttribute="width" id="PcH-ja-co6"/>
+                    <constraint firstAttribute="bottom" secondItem="fqB-as-dEY" secondAttribute="bottom" constant="10" id="eTe-vP-B6e"/>
+                    <constraint firstItem="qPU-Fu-UWm" firstAttribute="top" secondItem="i3g-AE-3HB" secondAttribute="top" constant="10" id="n0V-wS-kvE"/>
+                    <constraint firstItem="uTc-wG-coj" firstAttribute="leading" secondItem="qPU-Fu-UWm" secondAttribute="trailing" constant="20" id="rNC-HR-mNk"/>
+                    <constraint firstItem="fqB-as-dEY" firstAttribute="top" secondItem="qPU-Fu-UWm" secondAttribute="bottom" constant="2" id="rvN-xd-5gF"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uTc-wG-coj" secondAttribute="trailing" constant="20" id="yMV-5F-wZi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoLabel" destination="uTc-wG-coj" id="whX-YN-f2d"/>
+                <outlet property="infoTextField" destination="qPU-Fu-UWm" id="OwP-fX-N6H"/>
+            </connections>
+            <point key="canvasLocation" x="89.855072463768124" y="98.4375"/>
+        </tableViewCell>
+    </objects>
+</document>
